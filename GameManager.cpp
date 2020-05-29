@@ -62,7 +62,8 @@ void GameManager::drawBoard() {
 void GameManager::checkForWin() {
 	// For each win condition
 	for (int x = 0; x < 8; x++) {
-		if (_grid[_winCondition[x][0]] == _grid[_winCondition[x][1]] && _grid[_winCondition[x][1]] == _grid[_winCondition[x][2]]) {
+		if (_grid[_winCondition[x][0]] == _grid[_winCondition[x][1]]
+			&& _grid[_winCondition[x][1]] == _grid[_winCondition[x][2]]) {
 			_winner = _activePlayer;
 		}
 	}
